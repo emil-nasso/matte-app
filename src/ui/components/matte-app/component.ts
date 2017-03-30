@@ -39,7 +39,7 @@ export default class MatteApp extends Component {
     }
   }
 
-  newGif(){
+  async newGif(){
     //let gifJson = $.getJSON(`http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC`)
     /*let result = await fetch(`http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC`)
     console.log(result)

@@ -1,0 +1,16 @@
+#app{
+  input {
+    font-size: 85pt;
+    height: 120px;
+    width: 85px * 2;
+    vertical-align: middle;
+  }
+  span#equation{
+    font-size: 85pt;
+    height: 100px;
+  }
+  div#score{
+    font-size:42px;
+    color: green;
+  }
+}

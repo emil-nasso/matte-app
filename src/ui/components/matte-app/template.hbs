@@ -1,6 +1,10 @@
 <div>
-  <span id="equation">{{ equationDisplay }} <input type="text" onkeyup={{action guess}}/> </span>
-</div>
-<div id="score">
-  Poäng: {{ score }}
+  <div>
+    <span id="equation">{{ equationDisplay }} <input id="guess" type="text" onkeyup={{action guess}}/> </span>
+  </div>
+  <div id="score">
+    Poäng: {{ score }}
+  </div>
+
+  <app-settings @changeAction={{updateSettings}} @settings={{settings}} />
 </div>

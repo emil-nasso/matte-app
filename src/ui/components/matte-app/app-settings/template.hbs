@@ -1,0 +1,19 @@
+<div>
+  {{#if showSettings}}
+    <form onsubmit={{action save}}>
+    <h3>Inställningar:</h3>
+    <h5>Vänstra talet</h5>
+      Min: <input id="left-min" type="number" value={{settings.left.min}}/><br/>
+      Max: <input id="left-max" type="number" value={{settings.left.max}}/><br/>
+    <h5>Högra talet</h5>
+      Min: <input id="right-min" type="number" value={{settings.right.min}}/><br/>
+      Max: <input id="right-max" type="number" value={{settings.right.max}}/><br/>
+    <h5>Resultatet</h5>
+      Min: <input id="result-min" type="number" value={{settings.right.min}}/><br/>
+      Max: <input id="result-max" type="number" value={{settings.right.max}}/><br/>
+    <button type="submit">Spara</button>
+    </form>
+  {{else}}
+    <button onclick={{action toggleSettings}}>Inställningar</button>
+  {{/if}}
+</div>
